@@ -1,0 +1,175 @@
+body,
+html
+ {
+    height: 100%;
+    box-sizing:border-box;
+}
+
+.footer{
+    background:color;
+}
+.mainwrapper {
+    min-height: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+}
+
+#time-section {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  /*   background: rgba(0, 0, 0, 0);
+  opacity: 1; */
+}
+
+
+#time {
+    font-size: 70px;
+    text-align: center;
+    line-height: 220px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-shadow: 2px 3px black;
+}
+
+#mainBtn {
+    width: 120px;
+    height: 60px;
+    margin-left: 40%;
+    margin-top: -50%;
+ /*    background: white; */
+  
+    
+    border-radius:5px 5px 5px 5px;
+    font-family: "Caviar Dreams",CaviarDreams_Bold;
+    font
+}
+#downBtn{
+ text-align:center;
+ position:absolute;
+}
+
+#downBtn img{
+    width:60px;
+    height:60px;
+}
+
+#mainPage {
+    height: 734.4px;
+    transition:2s;
+}
+
+.menuBar {
+    width: 100%;
+    height: 100px;
+    background: brown;
+}
+
+.weather-display {
+    height: 500px;
+    width: 1200px;
+    background: silver;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.contact {
+    height: 100px;
+    width: 100%;
+    background: brown;
+}
+
+.row {
+
+    margin: 0 auto;
+}
+
+.weatherInfo {
+    height: 300px;
+    width: 800px;
+    font-size: 30px;
+    font-weight: bold;
+    background:#3c9df2;
+    color: white;
+    text-shadow: 1px 2px black;
+    font-family: 'CaviarDreams', cursive;
+    float:left;
+    margin-left:50px;
+    margin-bottom:20px;
+    background-image:url("../images/cloudy.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.weatherInfo div{
+    border:1px solid black;
+}
+
+#placeInfo {
+    height: 20%;
+    
+}
+
+#weather-img {
+
+}
+
+#current-temp {
+  
+}
+
+#extranInfo {}
+
+#detailInfo {
+    height: 80%;
+}
+
+#tempLH {
+
+    height: 40%;
+}
+
+#low,
+#high {
+margin:0;
+   
+}
+
+#humidity {
+    height: 60%;
+    
+}
+
+.wImg {
+    height: 200px;
+    width: 200px;
+}
+
+.sideBarOption{
+    float:right;
+}
+.sideBarOption div{
+    height:50px;
+    width:150px;
+    background:skyblue;
+    border:1px solid white;
+    border-radius:10px 10px 10px 10px;
+    margin-bottom:20px;
+    margin-right:100px;
+    text-align:center;
+    line-height:50px;
+}
+
+.serachContainer{
+    margin-left:400px;
+    clear:both;
+}
+#buttomBar{
+    height:100px;
+    width:auto;
+}

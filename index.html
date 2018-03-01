@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>first page</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/">
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- google font -->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="mainwrapper">
+        <!-- time display -->
+        <div id="time-section">
+            <h2 id="time"></h2>
+            <div id="downBtn" class="black"><a href="#mainPage"><img src="Assets/images/lol.gif" alt="downArrow"></a></div>
+            <div id="downBtn" class="yellow"><a href="#mainPage"><img src="Assets/images/web2.gif" alt="downArrow"></a></div>
+        </div>
+    </div>
+    <section id="mainPage">
+        <nav class="menuBar"></nav>
+        <!-- weather display-->
+        <div class="weather-display">
+            <!-- Search Button Bar-->
+          <div class="row" id="buttomBar"></div>
+            <div class="weatherInfo">
+                <div class="row" id="placeInfo">here for the location</div>
+                <div class="row" id="detailInfo">
+                    <div class="col-md-4" id="weather-img">image</div>
+                    
+                    <div class="col-md-2" id="current-temp">current temp</div>
+                    <div class="col-md-6" id="extraInfo">
+                        <div class="row" id="tempLH">
+                            <div class="col-md-6" id="low">low temp</div>
+                            <div class="col-md-6" id="high">high temp</div>
+                        </div>
+                        <div class="row" id="humidity">humidity</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sideBarOption">
+                <div class="hourly">Hourly</div>
+                <div class="today">Today</div>
+                <div class="tenDays">10 Days</div>    
+            </div>
+            <div class="serachContainer">
+            <input type="text" id="location-city" onfocus="this.value=''" value="City">
+            <input type="text" id="location-country" onfocus="this.value=''" value="Country">
+            <button id="submit">Search</button>
+            </div>
+
+        </div>
+        <footer class="contact"></footer>
+    </section>
+    </div>
+    <script src="Assets/Javascript/javascript.js"></script>
+    <script src="Assets/Javascript/weatherAPI.js"></script>
+</body>
+
+</html>

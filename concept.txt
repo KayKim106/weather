@@ -1,0 +1,11 @@
+* get weather information where you want to find a location.
+
+1. Basic application introduction 
+2.giving a two options for address and map 
+	- when user picks address,
+		- need a city, state , and zipcode for finding info
+	-if user picks map
+		-providing country images and all state's info
+		-and when user clicks the state, then return 
+		the state's current weather. 
+ 
