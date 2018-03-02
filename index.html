@@ -10,20 +10,33 @@
     <!-- google font -->
     <link rel="stylesheet" href="Assets/CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <!--google map api-->
+    
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- 
+    <script type="text/javascript" src="Assets/Javascript/scroll.js"></script> -->
+    
+    
+    
 </head>
+<style>
+
+</style>
 
 <body>
+
     <div class="mainwrapper">
         <!-- time display -->
         <div id="time-section">
             <h2 id="time"></h2>
             <div id="downBtn" class="black"><a href="#mainPage"><img src="Assets/images/lol.gif" alt="downArrow"></a></div>
-            <div id="downBtn" class="yellow"><a href="#mainPage"><img src="Assets/images/web2.gif" alt="downArrow"></a></div>
+           
         </div>
     </div>
     <section id="mainPage">
         <nav class="menuBar"></nav>
+        <div class="divider"></div>
         <!-- weather display-->
         <div class="weather-display">
             <!-- Search Button Bar-->
@@ -31,22 +44,32 @@
             <div class="weatherInfo">
                 <div class="row" id="placeInfo">here for the location</div>
                 <div class="row" id="detailInfo">
-                    <div class="col-md-4" id="weather-img">image</div>
-                    
-                    <div class="col-md-2" id="current-temp">current temp</div>
-                    <div class="col-md-6" id="extraInfo">
+                    <div class="col-md-4 colp" id="weather-img">image</div>
+ 
+                    <div class="col-md-2 colp">
+                         <div class="row" id="current-temp-title">Temp</div>
+                        <div class="row" id="current-temp"></div>
+                    </div> 
+                    <div class="col-md-6 colp" id="extraInfo">
                         <div class="row" id="tempLH">
-                            <div class="col-md-6" id="low">low temp</div>
-                            <div class="col-md-6" id="high">high temp</div>
+                            <div class="col-md-6 colp" id="low1">low temp
+                                            <div id="low"></div>
+                            </div>
+                            <div class="col-md-6 colp" id="high1">high temp
+                                            <div id="high"></div>
+                            </div>
                         </div>
                         <div class="row" id="humidity">humidity</div>
                     </div>
                 </div>
             </div>
+            <div id="map-info">
+                map
+            </div>
             <div class="sideBarOption">
                 <div class="hourly">Hourly</div>
                 <div class="today">Today</div>
-                <div class="tenDays">10 Days</div>    
+               <a href="tenday.html"> <div class="tenDays">5 Days</div>  </a>  
             </div>
             <div class="serachContainer">
             <input type="text" id="location-city" onfocus="this.value=''" value="City">
@@ -55,11 +78,16 @@
             </div>
 
         </div>
+            <div class="divider"></div>
         <footer class="contact"></footer>
+        
     </section>
     </div>
     <script src="Assets/Javascript/javascript.js"></script>
     <script src="Assets/Javascript/weatherAPI.js"></script>
+   <!--  <script src="Assets/Javascript/googlemap.js"></script> -->
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1CdmIw_4gVtTyg7gYYGYGrI5zBJwkrLk&callback=initMap"></script>
+
 </body>
 
 </html>

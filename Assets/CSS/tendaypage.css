@@ -1,0 +1,56 @@
+body{
+	margin:0;
+	padding:0;
+}
+.day1{
+	height:100px;
+	width:100px;
+	background:green;
+}
+.condition-row, table,  th{
+	width:1200px;
+	height:auto;
+	border:1px solid black;
+	text-align:center;
+	margin:0 auto;
+}
+nav{
+	height:100px;
+	width:100%;
+	background:cyan;
+
+}
+.sideBarOption{
+	overflow:hidden;
+	margin:0 auto;
+
+}
+.hourly, .today, .home{
+	float:right;
+	height:80px;
+	width:100px;
+	border:1px solid black;
+	border-radius:2px 2px 2px 2px;
+	text-align:center;
+	line-height: 30px;
+}
+*{
+	 box-sizing: border-box;
+	}
+		li{
+			list-style-type: none;
+			height:60px;
+			border:1px solid black;
+			text-align:center;
+			line-height: 60px;
+		}
+	.location{
+		width:1200px;
+		height:100px;
+		background:skyblue;
+		border:1px solid black;
+		border-radius:5px 5px 5px 5px;
+		margin:20px auto 20px auto;
+		text-align:center;
+		line-height: 100px;
+	}
