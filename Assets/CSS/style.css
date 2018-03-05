@@ -4,7 +4,9 @@ html
     height: 100%;
     box-sizing:border-box;
 }
-
+*{
+        font-family: 'Quicksand', sans-serif;
+}
 .mainwrapper {
     min-height: 100%;
     background-image: url("../images/background.jpg");
@@ -20,36 +22,29 @@ html
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  /*   background: rgba(0, 0, 0, 0);
-  opacity: 1; */
+    font-family: cursive;
+
 }
 .divider{
     width:100%;
-    height:50px;
-    background:lightgray;
+    height:100px;
+    background:#f2efed;
 }
-
-
 #time {
     font-size: 70px;
     text-align: center;
     line-height: 220px;
-    font-family: 'Quicksand', sans-serif;
     color: white;
+     font-family: 'Quicksand', sans-serif;
     text-shadow: 2px 3px black;
 }
-
 #mainBtn {
     width: 120px;
     height: 60px;
     margin-left: 40%;
     margin-top: -50%;
- /*    background: white; */
-  
-    
     border-radius:5px 5px 5px 5px;
-    font-family: "Caviar Dreams",CaviarDreams_Bold;
-    font
+
 }
 #downBtn{
  text-align:center;
@@ -71,19 +66,20 @@ html
 
 #mainPage {
     height: 734.4px;
-    transition:2s;
+/*     transition:2s; */
 }
 
 .menuBar {
     width: 100%;
     height: 50px;
-    background: #515d70;
+    background:#ce6c0a;
+    /* background: #515d70; */
 }
 
 .weather-display {
     height: 500px;
     width: 1200px;
-    background: #f7faff;
+    background: #f2f2f2;
     margin: 0 auto;
     overflow: hidden;
 
@@ -95,100 +91,125 @@ html
     background: #515d70;
 }
 
-.row {
-
+ #placeInfo{
+    height:50px;
     margin: 0 auto;
 }
+.row{
+    margin:-2px auto;
+}
+ #lowbox, #highbox{
+    border:none;
+} 
+h2{
+    margin-left:5%;
+    text-align:center;
+
+}
+
+
+#tempCe:hover, #tempF:hover{
+background:white;
+color:black;
+transition:0.1s;
+}
+#tempCe{
+    float:left;
+    border:none;
+   width:20%;
+background-color:rgba(0,0,0,0.2);
+border-radius:50%;
+}
+#tempF{
+    float:right;
+ border:none;
+ width:20%;
+ background-color:rgba(0,0,0,0.2);
+}
+
 
 .weatherInfo {
     height: 300px;
     width: 600px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     background:#3c9df2;
     color: white;
     text-shadow: 1px 2px black;
-    font-family: 'CaviarDreams', cursive;
     float:left;
     margin-left:30px;
     margin-bottom:20px;
-    background-image:url("../images/cloudy.gif");
+    background-image:url("../images/rain.gif");
     background-repeat: no-repeat;
     background-size:cover;
+    border-radius:10px 10px 10px 10px;
+    opacity:0.9;
+
 }
 .weatherInfo div{
-    border:1px solid black;
-}
-
-#placeInfo {
-    height: 20%;
-    
-}
-
-#weather-img {
 
 }
 
+
+#tempcRow{
+    height:100%;
+}
 #current-temp {
- height:50%;
  width:100%;
-}
+margin:0;
+} 
 #current-temp-title{
-    height:50%;
+    height:30%;
     width:100%;
-}
-
-
-#extranInfo {}
+    }
 
 #detailInfo {
     height: 80%;
 }
-
 #tempLH {
-
     height: 40%;
 }
-
 #low,
-#high {
-margin:0;
-   
+#high{
+margin:0 auto;
+/* height:55%; */
+border:none;
 }
+/* #low1{
+    height:100%;
+} */
 
-#humidity {
-    height: 60%;
-    
+
+#humidityRow{
+height:auto;
 }
-
 .wImg {
     height: 200px;
     width: 200px;
+    
 }
 
-.sideBarOption{
-    float:right;
-}
-.sideBarOption div{
-    height:50px;
-    width:150px;
-    background:skyblue;
-    border:1px solid white;
-    border-radius:10px 10px 10px 10px;
+.todayT, .tenDaysBtn{
     margin-bottom:20px;
-    margin-right:50px;
-    text-align:center;
-    line-height:50px;
+height:30px;
+width:150px;
+background:#515d70;
+color:white;
+font-weight: bold;
 }
 
-.serachContainer{
-    clear:both;
-    margin-left:-300px;
-}
-#buttomBar{
+#weather-title{
     height:100px;
     width:auto;
+    margin-left:30px;
+    margin-top:30px;
+    line-height: 100px;
 }
+
+#location-city, #location-country{
+    border-radius:5px 5px 5px 5px;
+    }
+
 .colp{
  padding: 0 !important;
    margin: 0 !important;
@@ -196,18 +217,53 @@ margin:0;
 *{
     text-align:center;
 }
-.placeInfo{
-    margin:0 auto;
 
-}
-#current-temp-title{
-    text-align:center;
-}
 
 #map-info{
     float:left;
     height:300px;
     width:300px;
     margin-left:40px;
-    
+}
+
+/* .detail{
+    height:40px;
+    width:40px;
+    font-size:auto;
+    font-size:10px;
+    background:white;
+    border-radius:50%;
+} */
+ #wind, #pressure{
+    height:30px;
+} 
+#tempList{
+    margin-top:5px;
+}
+/*auto typing */
+    .typed::after {
+    content: '|';
+    display: inline;
+
+    animation: blink 0.7s infinite;
+}
+
+
+#detailBtn{
+    width:300px;
+
+}
+
+.downBtn{
+    border-radius:50%;
+    font-size:15px;
+    margin-left:75%;
+}
+
+#windBox{
+    height:30px
+}
+.extra-info{
+    display:none;
+  
 }
