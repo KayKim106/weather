@@ -39,7 +39,7 @@ $("#submit").on('click', function(err) {
         //storing current location weather image 
         const weatherImg = response.list[0].weather[0].icon;
         //pulling image from openWeatherURL by png extension
-        const weatherIconURL = "http://openweathermap.org/img/w/" + weatherImg + ".png";
+        const weatherIconURL = "https://openweathermap.org/img/w/" + weatherImg + ".png";
         document.getElementById("humidity").innerHTML = humidity;
      document.getElementById("wind").innerHTML =wind;
          document.getElementById("pressure").innerHTML =pressure;
@@ -102,7 +102,7 @@ $("#submit").on('click', function(err) {
 function daily(api, city, country) {
 
     let length = 0;
-    const urldaily = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "," + country + "&appid=" + api;
+    const urldaily = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "," + country + "&appid=" + api;
     $.ajax({
         url: urldaily,
         method: "GET"
@@ -121,7 +121,7 @@ function daily(api, city, country) {
             let tableW = $("<li>" + "<td>" + reponsedaily.list[i].wind.speed + "</td>");
             let tableH = $("<li>" + "<td>" + reponsedaily.list[i].main.humidity + "</td>");
             const weatherImg = reponsedaily.list[i].weather[0].icon;
-            const weatherIconURL = "http://openweathermap.org/img/w/" + weatherImg + ".png";
+            const weatherIconURL = "https://openweathermap.org/img/w/" + weatherImg + ".png";
 
             let tableR = $("<li>" + "<td>" + "<img src='" + weatherIconURL + "'>" + "</td>");
             $(".table").addClass("table");
