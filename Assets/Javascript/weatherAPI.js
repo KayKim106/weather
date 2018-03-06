@@ -62,6 +62,7 @@ $("#submit").on('click', function(err) {
 
         }
 
+
         //storing location data for google map
         lat = response.list[0].coord.lat;
         lon = response.list[0].coord.lon;
