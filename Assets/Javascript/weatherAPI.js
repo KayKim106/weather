@@ -19,7 +19,7 @@ $("#submit").on('click', function(err) {
     country = $("#location-country").val().trim();
 
     // Weather URL
-    const queryURL = "http://api.openweathermap.org/data/2.5/find?q=" + city + "," + country + "&units=imperialMultilingual support&appid=" + APIKey;
+    const queryURL = "https://api.openweathermap.org/data/2.5/find?q=" + city + "," + country + "&units=imperialMultilingual support&appid=" + APIKey;
     $.ajax({
         url: queryURL,
         type: "GET"
